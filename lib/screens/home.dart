@@ -45,15 +45,14 @@ class _HomeScreenState extends State<HomeScreen> {
         children: [
           Expanded(
             child: Row(
-              //Gender
-              children: [
+              //Gender children: [
                 Expanded(
-                  child: ReusableCard(
+            child: ReusableCard(
                     //Male
                     selected: selectedGneder == Gender.male ? true : false,
                     onpressed: () {
                       setState(() {
-                        selectedGneder = Gender.male;
+      selectedGneder = Gender.male;
                       });
                     },
                     child: IconContent(
